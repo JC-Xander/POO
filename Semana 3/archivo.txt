@@ -1,0 +1,2 @@
+|     Ciudad    |     Fecha     |  Ventas  |
+|  Tegucigalpa  |    12/Enero   |$   4586  |
