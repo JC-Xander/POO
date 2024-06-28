@@ -53,6 +53,7 @@ Todos los read funcionan con punteros
 
 Nota: Si trabajamos en vinario tenemos que añadirle +b al parametro
 ## Funciones str
+[String(Metodos)](https://docs.python.org/3/library/stdtypes.html#string-methods)
 
 - @str.lower() -> str<br>
 retorna una copia con todos los caracteres en minusculas.
@@ -91,6 +92,26 @@ Retorna verdadero si la cadena se puede convertir a un numero
 
 - @str.isalpha()
 comprueba si una cadena está formada solo por letras o no. Si encuentra cualquier otro carácter, como un número o un carácter especial, devuelve False. De lo contrario, para una cadena válida, devuelve True.
+
+- @str.find(@sub:str, @int) -> int
+Devuelve el índice más bajo de la cadena en la que se encuentra la subcadena sub la rebanada . Los argumentos opcionales start y end son interpretado como en notación de cortes. Devuelve si no se encuentra sub.s[start:end]-1
+Nota:
+```py
+# El metodo solo debe usarse si se necesita saber la posición de la cadena, para comprobar si es o no es una sub cadena utilizamos el operador:
+
+'py' in 'pyton' # -> True
+
+```
+-@str.strip() -> str
+Elimina los espacios(espacios, tabs, o nuevas líneas) que se encuentren la principio y al final de la cadena y luego lo retorna.
+
+- @str.count(@sub:str) -> int
+retorna las veces que aparace @sub en @str
+
+- @str.isupper() -> bool
+Retorna verdadero si todos lo caracteres de la cadena son mayusculas de lo contrario son falsos
+
+
 
 ## Modulos
 ### math
