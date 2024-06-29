@@ -29,6 +29,9 @@ Combierte un caracter a codigo ASCII
 
 Python tiene una función llamada dir la cual lista los métodos disponibles para un objeto. La función type muestra el tipo de un objeto y la función dir muestra los métodos disponibles.
 
+exit()
+Finaliza el programa.
+
 ### Manejar archivos
 - open(@Ruta:str) 
 Habre el archivo y crea un flujo de texto o byte(Nos pemite ingresar una ruta relativa o absoluta) pero lo habre en modo de lectura y no s puede modificar pero podemos alladir otra variable que nos permite hacer mas cosas
@@ -111,12 +114,16 @@ retorna las veces que aparace @sub en @str
 - @str.isupper() -> bool
 Retorna verdadero si todos lo caracteres de la cadena son mayusculas de lo contrario son falsos
 
+- @str.title() -> str
+Devuelve un aversion de la cadena donde todos lo caracteres iniciales de cada palabra se convertira en mayuscula
 
+- @str.rstrip() -> str
+Retorna una copia de @str Eliminando todos los espacios que encuentre en el lado derecho.
 
 ## Modulos
 ### math
 import math
-Para utilizarlas hay que importar un modulo con
+Para utilizarlas hay que importar un modulo 
 En este modulo encontraremos todo tipo de funciones matematicas.
 
 math.log10(@num) -> float
