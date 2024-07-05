@@ -32,29 +32,41 @@ Python tiene una función llamada dir la cual lista los métodos disponibles par
 exit()
 Finaliza el programa.
 
+repr(@str)
+Recibe cualquier objeto como argumento y devuelve una representación del objeto como una cadena. En el caso de las cadenas, representa los espacios en blanco con secuencias de barras invertidas.
+```py
+    s = '1 2\t 3\n 4'
+    print(s)
+    # 1 2   3
+    #  4
+
+    print(repr(s))
+    # '1 2\t 3\n 4'
+```
+
 ### Manejar archivos
 - open(@Ruta:str) 
 Habre el archivo y crea un flujo de texto o byte(Nos pemite ingresar una ruta relativa o absoluta) pero lo habre en modo de lectura y no s puede modificar pero podemos alladir otra variable que nos permite hacer mas cosas
 
-- 'r' = read: Permite abrir y leer
-- 'w' = write: elimina todo lo que habia en el documento y escribe lo nuevo
-- 'a' = append: Añade en la ultima linea del documento
+- 'r' = read: Permite abrir y leer.
+- 'w' = write: permite escribir en el archivo, pero elimina todo lo que habia en el documento y si el documento a abrir no existe lo crea.
+- 'a' = append: Añade en la ultima linea del documento.
 
 file.close()
-Cierra el archivo que hemos abierto
+Cierra el archivo que hemos abierto.
 
 file.read(@num)
 Lee los primeros @num caracteres, si no especificamos @num, leera todo el documento.
 
 readline(@size:num)
-Lee toda la linea o hasta que encuentre EOF(final del archivo) Solo lee 1 linea y @size no permite seleccionar n caracteres de cada linea
+Lee toda la linea o hasta que encuentre EOF(final del archivo) Solo lee 1 linea y @size no permite seleccionar n caracteres de cada linea.
 
 readlines()
-Lee todas las linea y las retorna en un arreglo con cada linea
+Lee todas las linea y las retorna en un arreglo con cada linea.
 
-Todos los read funcionan con punteros 
+Todos los read funcionan con punteros .
 
-Nota: Si trabajamos en vinario tenemos que añadirle +b al parametro
+Nota: Si trabajamos en vinario tenemos que añadirle +b al parametro.
 ## Funciones str
 [String(Metodos)](https://docs.python.org/3/library/stdtypes.html#string-methods)
 
