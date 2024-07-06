@@ -1,0 +1,30 @@
+     Palabra         N°  |        Palabra         N°  |        Palabra         N°
+ 1) La              -> 8   |    2) Tecnología      -> 1   |    3) Ha              -> 1
+ 4) Transformado    -> 1   |    5) Forma           -> 1   |    6) En              -> 3
+ 7) Que             -> 3   |    8) Vivimos         -> 1   |    9) Trabajamos      -> 1
+10) Y               -> 6   |   11) Nos             -> 1   |   12) Comunicamos     -> 1
+13) Desde           -> 2   |   14) Invención       -> 1   |   15) Del             -> 2
+16) Internet        -> 1   |   17) Hemos           -> 1   |   18) Sido            -> 1
+19) Testigos        -> 1   |   20) De              -> 4   |   21) Un              -> 2
+22) Avance          -> 1   |   23) Sin             -> 2   |   24) Precedentes     -> 1
+25) Conectividad    -> 1   |   26) Global          -> 1   |   27) Hoy             -> 1
+28) Día             -> 1   |   29) Las             -> 2   |   30) Personas        -> 1
+31) Pueden          -> 1   |   32) Conectarse      -> 1   |   33) Al              -> 2
+34) Instante        -> 1   |   35) Con             -> 1   |   36) Alguien         -> 1
+37) Otro            -> 1   |   38) Lado            -> 1   |   39) Mundo           -> 1
+40) A               -> 1   |   41) Través          -> 1   |   42) Redes           -> 1
+43) Sociales        -> 2   |   44) Videollamadas   -> 1   |   45) Aplicaciones    -> 1
+46) Mensajería      -> 1   |   47) Además          -> 1   |   48) Inteligencia    -> 1
+49) Artificial      -> 1   |   50) Está            -> 1   |   51) Revolucionando  -> 1
+52) Diversas        -> 1   |   53) Industrias      -> 1   |   54) Medicina        -> 1
+55) Hasta           -> 1   |   56) Agricultura     -> 1   |   57) Los             -> 1
+58) Robots          -> 1   |   59) Máquinas        -> 1   |   60) Inteligentes    -> 1
+61) Son             -> 1   |   62) Capaces         -> 1   |   63) Realizar        -> 1
+64) Tareas          -> 1   |   65) Antes           -> 1   |   66) Requerían       -> 1
+67) Intervención    -> 1   |   68) Humana          -> 1   |   69) Aumentando      -> 1
+70) Eficiencia      -> 1   |   71) Reduciendo      -> 1   |   72) Errores         -> 1
+73) Embargo         -> 1   |   74) Estos           -> 1   |   75) Avances         -> 1
+76) También         -> 1   |   77) Plantean        -> 1   |   78) Desafíos        -> 1
+79) Éticos          -> 1   |   80) Debemos         -> 1   |   81) Abordar         -> 1
+82) Para            -> 1   |   83) Asegurar        -> 1   |   84) Futuro          -> 1
+85) Equilibrado     -> 1   |   86) Justo           -> 1   |   
