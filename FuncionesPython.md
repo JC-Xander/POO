@@ -160,12 +160,20 @@ retorna un numero ente @int1 y @int2(incluyendolos)
 random.choice(@Array)
 Escoge un elemento aleatorio del @Array
 
+### Diccionarios
+@dict.get('@Key') buscar la @key y devuelve su valor, si no lo encuentra devuelve none.
 
+list(d.keys())
+Devuelve una lista con las @keys del diccionario.
 
+list(d.value()) 
+Devuelve todos los @values del diccionario
 
+list(d.items()) retorna todos los elementos con sus respectivos llave valor en forma de tuplas()
 
-
-
+### Tuplas
+- @tupla.index(@x) busca el elemeto x en la tupla.
+- @tupla.count(@elemento) Busca un elemento en la tupla.
 
 
 
