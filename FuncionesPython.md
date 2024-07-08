@@ -41,10 +41,19 @@ Recibe cualquier objeto como argumento y devuelve una representación del objeto
     #  4
 
     print(repr(s))
-    # '1 2\t 3\n 4'
+    # '1 2\t 3\n 4 '
 ```
 
-### Manejar archivos
+list(@objeto)
+Convierte en una lista los elementos del objeto enviado
+```py
+    cadena = 'Hola'
+    lista_cadena = list(cadena)
+    print(lista_cadena) # -> ['H', 'o', 'l', 'a']
+```
+
+
+## Manejar archivos
 - open(@Ruta:str) 
 Habre el archivo y crea un flujo de texto o byte(Nos pemite ingresar una ruta relativa o absoluta) pero lo habre en modo de lectura y no s puede modificar pero podemos alladir otra variable que nos permite hacer mas cosas
 
@@ -112,7 +121,8 @@ comprueba si una cadena está formada solo por letras o no. Si encuentra cualqui
 Devuelve el índice más bajo de la cadena en la que se encuentra la subcadena sub la rebanada . Los argumentos opcionales start y end son interpretado como en notación de cortes. Devuelve si no se encuentra sub.s[start:end]-1
 Nota:
 ```py
-# El metodo solo debe usarse si se necesita saber la posición de la cadena, para comprobar si es o no es una sub cadena utilizamos el operador:
+# El metodo solo debe usarse si se necesita saber la posición de la cadena, 
+# para comprobar si es o no es una sub cadena utilizamos el operador:
 
 'py' in 'pyton' # -> True
 
@@ -132,35 +142,18 @@ Devuelve un aversion de la cadena donde todos lo caracteres iniciales de cada pa
 - @str.rstrip() -> str
 Retorna una copia de @str Eliminando todos los espacios que encuentre en el lado derecho.
 
-## Modulos
-### math
-import math
-Para utilizarlas hay que importar un modulo 
-En este modulo encontraremos todo tipo de funciones matematicas.
+- `@str.join(@list) -> str`:<br>
+join es el inverso de split. Este toma una lista de cadenas y concatena los elementos. join es un método de cadenas, así que tienes que invocarlo en el delimitador y pasar la lista como un parámetro
+```py
+lista = ['H', 'o', 'l', 'a']
 
-math.log10(@num) -> float
-retorna el log base 10 de un numero
+union = ''.join(lista)
+print(union) # -> 'Hola'
 
-math.pi -> float
-retorna el numero pi
-
-math.sqrt(@num) -> float
-Permite encontrar la raiz cuadrada de un numero,
-
----
-### random
-import random
-
-random.random() -> float
-imprime numero de [0,1)
-
-random.randint(@int1, @int2) -> int
-retorna un numero ente @int1 y @int2(incluyendolos)
-
-random.choice(@Array)
-Escoge un elemento aleatorio del @Array
-
-### Diccionarios
+union = '-'.join(lista)
+print(union) # -> 'H-o-l-a'
+``` 
+## Diccionarios
 @dict.get('@Key') buscar la @key y devuelve su valor, si no lo encuentra devuelve none.
 
 list(d.keys())
@@ -171,11 +164,65 @@ Devuelve todos los @values del diccionario
 
 list(d.items()) retorna todos los elementos con sus respectivos llave valor en forma de tuplas()
 
-### Tuplas
+## Tuplas
 - @tupla.index(@x) busca el elemeto x en la tupla.
 - @tupla.count(@elemento) Busca un elemento en la tupla.
 
+## Listas
+- `@list.append(@NewElemento)`:<br>
+Agrega un nuevo elemento al final de la lista
 
+- `@list1.extend(@list2)`: <br>
+Toma una lista como argunmento agrega todo sus elementos a @list1 y deja a @list2 sin modificar.
+
+- `@list.sort()`:<br>
+Ordena los elementos de la lista de menor a mayor
+
+- `@list.sorted()`:<br>
+cumple la misma función que sort() solo que esta no modfica la lista original sino que retorna una nueva listas ordenada de mayor a menor.
+ 
+Nota: la mayoría de metodos no retornan nada, sino que modifican la lista original.
+
+# Modulos
+En Python, un módulo es un archivo que contiene definiciones y declaraciones de Python, como funciones, clases, variables, etc. El nombre del archivo es el nombre del módulo con el sufijo .py. Los módulos permiten reutilizar y organizar mejor el código en espacios de nombres. Puedes importar un módulo en otro módulo usando la palabra clave `import @clase`
+
+Si en lugar de importar todo el modulo solo queremos exportar un metodos o constante en especifico podemos utilizar: `from @clase import @name` y podemos cambiar como se llamara el elemento importado con `as`
+```py
+from match import sqrt as raiz
+
+print(raiz(25)) # -> 5
+```
+---
+
+
+## 1. math
+__import math__
+
+#### Metodos
+
+- `math.log10(@num) -> float`:<br>
+retorna el logaritmo base 10 de @num
+
+
+- `math.sqrt(@num) -> float`:<br>
+Permite encontrar la raiz cuadrada de un numero,
+
+#### Constantes
+- `math.pi -> float:`<br>
+retorna el numero pi
+
+---
+## 2. random
+import random
+
+- `random.random() -> float`:<br>
+imprime numero de [0,1)
+
+- `random.randint(@int1, @int2) -> int`:<br>
+retorna un numero ente @int1 y @int2(incluyendolos)
+
+- `random.choice(@Array) -> element`:<br>
+Escoge un elemento aleatorio del @Array
 
 
 
