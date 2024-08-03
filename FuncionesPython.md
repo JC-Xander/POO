@@ -34,6 +34,9 @@ Finaliza el programa.
 
 repr(@str)
 Recibe cualquier objeto como argumento y devuelve una representación del objeto como una cadena. En el caso de las cadenas, representa los espacios en blanco con secuencias de barras invertidas.
+
+dir(@objetos)
+Imprime toda las funciones que pertenecen al @objeto.
 ```py
     s = '1 2\t 3\n 4'
     print(s)
